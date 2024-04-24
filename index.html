@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lithophane Viewer</title>
+  <script type="module" crossorigin src="/assets/index-XRU8ZLop.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CzQaL93m.css">
+</head>
+<body>
+    <div class="controls">
+        <input type="file" id="imageUpload" accept="image/*" multiple><br>
+        Min Thickness: <input type="range" id="minThickness" value="1" min="1" max="100" step="0.1"><br>
+        Max Thickness: <input type="range" id="maxThickness" value="10" min="1" max="200" step="0.1"><br>
+        Resolution: <input type="range" id="resolutionSlider" min="1" max="100" value="25" step="1"><span id="resolutionDisplay">25%</span><br>
+        <input type="number" id="resolutionInput" min="1" max="100" value="25" style="width: 50px;">%<br>
+        
+        <span id="segmentInfo">Width Segments: --, Height Segments: --</span><br>
+        <span id="verticesInfo">Total Vertices: --</span><br>
+        <button id="downloadMesh">Download Mesh</button><br>
+        
+    </div>
+</body>
+</html>
